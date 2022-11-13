@@ -36,7 +36,7 @@ if(isset($_POST['add_to_cart'])){
     <link rel="stylesheet" href="styleshop.css">
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/Logo.png">
-    <href="https: //fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@0;1&family=Quicksand:wght@300;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@0;1&family=Quicksand:wght@300;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -76,7 +76,10 @@ if(isset($_POST['add_to_cart'])){
                 }
             ?>
         </div>
+        <div class="load-more" style="margin-top: 1rem; text-align: center">
+            <a href="shop.php" class="btn-load">Load more</a>
 
+        </div>
     </section>
     
     <!-- <div class="about">

@@ -22,6 +22,47 @@
 
 }
 
+.heading{
+   min-height: 60vh;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   gap:1rem;
+   background: url("images/Landscapes/image\ \(40\).JPG") no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position:0cm -12cm;
+   text-align: center;
+}
+
+.heading h3{
+   font-family: 'Playfair Display', serif;
+   position: absolute;
+   top: 32rem;
+   font-size: 4rem;
+   color:var(--white);
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+/* .heading p{
+   position: absolute;
+   top: 21rem;
+   font-size: 2.5rem;
+   color:#633;
+   letter-spacing: 1px;
+
+} */
+
+.heading p a{
+   color: #fff;
+}
+
+.heading p a:hover{
+   text-decoration: underline;
+}
+
 /* *::selection{
     background-color: var(--purple);
     color:var(--white);
@@ -101,7 +142,25 @@ background-color: #666;
 
  } */
 
+.btn-load{
+display: inline-block;
+margin-top: 1rem;
+padding: .5rem 3rem;
+cursor: pointer;
+color: var(--white);
+font-size: 18px;
+border-radius: .3rem;
+border: transparent;
+text-transform: capitalize;
+background-color: #633;
+letter-spacing: 1px;
 
+}
+.btn-load:hover{
+   background-color: #fff;
+   color: #633;
+   letter-spacing: 1px;
+}
 .btn,
 .option-btn,
 .delete-btn,

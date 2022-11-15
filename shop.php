@@ -22,6 +22,10 @@ if(isset($_POST['add_to_cart'])){
         $message[]='Product added to cart';
     }
 }
+
+
+
+
 ?>
 
 <!DOCTYPE html>

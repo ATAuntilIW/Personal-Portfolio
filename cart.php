@@ -36,7 +36,9 @@ if (isset($_GET['delete_all'])) {
     <link rel="stylesheet" href="styleshop.css">
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/Logo.png">
-    <href="https: //fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@0;1&family=Quicksand:wght@300;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@0;1&family=Quicksand:wght@300;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -44,8 +46,10 @@ if (isset($_GET['delete_all'])) {
     <?php include 'header.php'; ?>
 
     <div class="heading">
-        <h3>MMBRD's SHOWCASE</h3>
-        <p>Your shopping cart</p>
+        <h3>MMBRD's SHOP</h3>
+        <h1>Damn, you have great taste!</h1>
+        <p><a href="home.php">Home</p>
+
     </div>
 
     <section class="shopping-cart">

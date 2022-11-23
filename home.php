@@ -47,7 +47,7 @@ if(isset($_POST['add_to_cart'])){
         <div class="content">
             <h3>A new ornement to lighten your home</h3>
             <p>Hang a piece of the world and set the atmosphere.</p>
-            <a href="about.php" class="white-btn">Discover more</a>
+            <a href="index.html" class="white-btn">Discover more</a>
             <!-- <img src="images/LIghtplay/image (3).jpg" alt=""> -->
         </div>
     </section>
@@ -55,7 +55,7 @@ if(isset($_POST['add_to_cart'])){
         <h1 class="title">Latest products</h1>
         <div class="box-container">
             <?php
-                $select_products=mysqli_query($conn, "SELECT * FROM `products` LIMIT 6") or die('query failed');
+                $select_products=mysqli_query($conn, "SELECT * FROM `products` LIMIT 4") or die('query failed');
                 if(mysqli_num_rows($select_products)>0){
                     while($fetch_products = mysqli_fetch_assoc($select_products)){
             ?>

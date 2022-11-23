@@ -336,7 +336,7 @@ transform: translateY(-10px);
     color:var(--black);
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
  
  .show-products .box-container .box .price{

@@ -22,15 +22,18 @@
 
 }
 .empty{
-   position: absolute;
-   left: 20cm;
+   /* position: relative; */
+   /* left: 10.5cm; */
    padding: 1.5rem;
+   /* margin: 1rem; */
    text-align: center;
    background-color: rgb(255,255,255,0.4);
    color: #333;
    font-size: 1.5rem;
    width: 400px;
    align-items: center;
+   font-family: 'Quicksand', sans-serif ;
+
   
 }
 
@@ -38,48 +41,74 @@
    min-height: 70vh;
    display: flex;
    flex-flow: column;
-   align-items: left;
+   align-items: center;
    justify-content: center;
    gap:1rem;
-   background: url("images/Landscapes/image\ \(40\).JPG") ;
-   background-attachment: fixed;
+   background: url("images/Landscapes/image\ \(40A\).jpg") ;
+   /* background-attachment: fixed; */
    background-size: cover;
-   background-position: bottom;
-   text-align: left;
+   background-position: center;
+   /* text-align: center; */
 }
 
 .heading h3{
-   font-family: 'Playfair Display', serif;
-
+   position: absolute;
+   font-family: 'Quicksand', sans-serif;
+   top: 33rem;
+   left: 21.7cm ;
    font-size: 3.5rem;
    color:var(--white);
+   font-weight: 300;
+   color: rgb(4, 1, 35);
    text-transform: uppercase;
    letter-spacing: 2px;
-   width: 99px;
+   background:rgba(0,0,0,.1);
+   /* width: 100px; */
+}
+
+.heading h1{
+   position: absolute;
+   font-family: 'Quicksand', sans-serif;
+   top: 53rem;
+   right: 4.2cm ;
+   font-size: 2.3rem;
+   color:var(--white);
+   font-weight: 400;
+   color: rgb(4, 1, 35);
+   text-transform: uppercase;
+   /* letter-spacing: 2px; */
+   /* width: 300px; */
+   background:rgba(0,0,0,.1);
+   rotate: -1deg;
+
 }
 
 
 .heading p{
+   position: absolute;
    top: 45rem;
-   left: 1rem;
+   left: 17em;
    font-size: 2.5rem;
-   color:#f5f5f5;
+   color: rgb(4, 1, 35);
    letter-spacing: 1px;
-
    text-transform: uppercase;
-   font-family: 'Raleway', sans-serif;
-   font-weight: 100;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 400;
    /* font-style: italic; */
 
 
 }
 
 .heading p a{
-   color: #fff;
+   color: rgb(4, 1, 35);
+   background:rgba(0,0,0,.1);
+
 }
 
 .heading p a:hover{
    text-decoration: underline;
+   font-size: 3.5rem;
+
 }
 
 /* *::selection{
@@ -108,6 +137,7 @@ body{
 }
 .title{
    text-align: center;
+   font-family: 'Playfair Display', serif;
    margin: 2rem;
    text-transform: uppercase;
    color: var(--black);
@@ -155,7 +185,7 @@ background-color: #666;
 } */
 .white-btn:hover{
     background-color: var(--white);
-    color: var(--black);
+    color: #633;
 }
 /* .btn{
 
@@ -166,19 +196,19 @@ display: inline-block;
 margin-top: 1rem;
 padding: .5rem 3rem;
 cursor: pointer;
-color: var(--white);
+color: #633;
 font-size: 18px;
-border-radius: .3rem;
-border: transparent;
+/* border-radius: .3rem; */
+border: #633 solid 1px;
 text-transform: capitalize;
-background-color: #633;
+background-color: transparent;
+font-family: 'Quicksand', sans-serif;
+
 letter-spacing: 1px;
 
 }
 .btn-load:hover{
-   background-color: #fff;
-   color: #633;
-   letter-spacing: 1px;
+text-decoration: underline;
 }
 .btn,
 .option-btn,
@@ -194,6 +224,8 @@ border-radius: .3rem;
 border: transparent;
 text-transform: capitalize;
 background-color: rgb(233, 170, 160);
+font-family: 'Quicksand', sans-serif;
+
 
 }
  .form-container{
@@ -375,10 +407,11 @@ position: absolute;
 }
 .footer{
    background:  linear-gradient(rgba(123, 56, 0, 0.2),rgba(123, 56, 0, 0.3));
+
    
 }
 .footer .box-container {
-   max-width: 1200px;
+   max-width: 1500px;
    margin:0 auto;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
@@ -467,12 +500,12 @@ position: absolute;
    padding:.5rem;
 }
 .products .box-container{
-   max-width: 1200px;
+   max-width: 1500px;
    margin:0 auto;
    display: grid;
    grid-template-columns: repeat(auto-fit, 30rem);
    align-items: flex-start;
-   gap:1.5rem;
+   gap:2rem;
    justify-content: center;
 }
 
@@ -507,7 +540,7 @@ position: absolute;
    color:var(--black);
    font-family: 'Quicksand', sans-serif;
    text-transform: uppercase;
-   letter-spacing: 2px;
+   letter-spacing: 1px;
 }
 
 
@@ -554,21 +587,23 @@ position: absolute;
    z-index: 2;
    width: 100%;
    border-radius: .3rem;
-   background-color: var(--light-bg);
+   background-color: rgb(255,255, 255,0.4);
    padding: 1.2rem 1.4rem;
    font-size: 1.8rem;
    color : var(--black);
    margin: 1rem 0;
    border-style: solid;
    border-color: var(--white);
+   font-family: 'Quicksand', sans-serif;
 
 }
 .contact form h3{
 
    padding-top: 1.5rem;
-   font-size: 3rem;
+   font-size: 2.5rem;
    color: #333;
    text-transform: uppercase;
+   font-family: 'Playfair Display', serif;
 }
 .contact form p{
 
@@ -600,7 +635,6 @@ position: absolute;
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
    background-color: rgb(255,255,255,0.2);
-   box-shadow: var(--box-shadow);
    padding:2rem;
    text-align: center;
    /* border:var(--border); */
@@ -789,6 +823,20 @@ position: absolute;
    /* justify-content: center; */
    background-color: rgb(255,255, 255,0.4);
    box-shadow: var(--box-shadow);
+}
+.placed-orders .box-container .empty{
+   position: relative;
+   left: 10.5cm;
+   padding: 1.5rem;
+   margin: 1rem;
+   text-align: center;
+   background-color: rgb(255,255,255,0.4);
+   color: #333;
+   font-size: 1.5rem;
+   width: 400px;
+   align-items: center;
+   font-family: 'Quicksand', sans-serif ;
+
 }
 .placed-orders .box-container .box p{
    padding: 1rem 0;

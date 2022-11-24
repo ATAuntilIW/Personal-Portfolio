@@ -1,4 +1,5 @@
 <?php
+
 if(isset($message)){
    foreach($message as $message){
       echo '
@@ -21,7 +22,17 @@ if(isset($message)){
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <p> new <a href="login.php">login</a> | <a href="register.php">register</a> </p>
+         <?php if(!isset($user_id)){
+          echo '<p> new <a href="login.php">login</a> | <a href="register.php">register</a> </p>';
+         }
+         ?>
+         <p>Welcome <span> <?php echo $_SESSION['user_name'] ?> </span>!</p>
+         <a href="logout.php" class="logout-btn">Logout</a>
+
+
+
+         <!--  -->
+        
       </div>
    </div>
 

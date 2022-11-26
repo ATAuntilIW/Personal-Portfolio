@@ -22,9 +22,9 @@
         </div>
         <div class="box">
             <h3>Follow me</h3>
-            <a href="#"> <i class="fab fa-facebook-f"> Facebook</i></a>
-            <a href="#"> <i class="fab fa-instagram"> Instagram</i></a>
-            <a href="#"> <i class="fab fa-linkedin"> Linkedin</i></a>
+            <a href="#"> <i class="fab fa-facebook-f"> </i>Facebook</a>
+            <a href="#"> <i class="fab fa-instagram"> </i>Instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"> </i>Linkedin</a>
         </div>
     </div>
     <div class="credit">

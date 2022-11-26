@@ -34,7 +34,9 @@ if (isset($_GET['delete_all'])) {
     <title>Cart</title>
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="styleshop.css">
-    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+        rel="stylesheet"  type='text/css'>
+    <script src="https://kit.fontawesome.com/d48363bb3a.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/Logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +50,7 @@ if (isset($_GET['delete_all'])) {
     <div class="heading">
         <h3>MMBRD's SHOP</h3>
         <h1>Damn, you have great taste!</h1>
-        <p><a href="home.php">Home</p>
+        <p><a href="home.php">Home</a></p>
 
     </div>
 
@@ -72,7 +74,8 @@ if (isset($_GET['delete_all'])) {
                             <input type="number" min="1" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>">
                             <input type="submit" name="update_cart" value="update" class="btn">
                         </form>
-                        <div class="sub-total"> Sub total : <span>$<?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?>/-</span> </div>
+                        <div class="sub-total"> Sub total : <span><?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?>€</span> </div>
+                        
                     </div>
             <?php
                     $grand_total += $sub_total;
@@ -81,15 +84,23 @@ if (isset($_GET['delete_all'])) {
                 echo '<p class="empty">your cart is empty</p>';
             }
             ?>
+
+    
         </div>
-        <div style="margin-top: 2rem; text-align:center;">
-            <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1) ? '' : 'disabled'; ?>" onclick="return confirm('delete all from cart?');">delete all</a>
-        </div>
+       
+            
         <div class="cart-total">
-            <p>grand total : <span>$<?php echo $grand_total; ?>/-</span></p>
+            <div class="topt">
+            <p>grand total : <span><?php echo $grand_total; ?>€</span></p>
+
+            <a href="cart.php?delete_all" >
+            <i class="fa-sharp fa-solid fa-trash <?php echo ($grand_total > 1) ? '' : 'disabled'; ?>" onclick="return confirm('delete all from cart?');"></i>delete all</a>
+            </div>
             <div class="flex">
-                <a href="shop.php" class="btn">Continue shopping</a>
-                <a href="checkout.php" class="btn <?php echo ($grand_total > 1) ? '' : 'disabled'; ?>">proceed to checkout</a>
+                <a href="shop.php">
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i><p>Continue Shopping</p></a>
+                <a href="checkout.php">
+                    <i class="fa-sharp fa-solid fa-arrow-right <?php echo ($grand_total > 1) ? '' : 'disabled'; ?>"></i><p>Proceed to checkout</p></a>
             </div>
         </div>
     </section>
